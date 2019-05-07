@@ -2,3 +2,4 @@ flask
 postgres
 flask-sqlalchemy
 flask-script
+flask-wtf
