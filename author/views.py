@@ -1,6 +1,6 @@
 from flask_blog import app
 from flask import render_template, redirect
-from author.form import RegisterForm
+from flask_blog.author.form import RegisterForm
 @app.route('/login')
 def login():
     return "Hello, User!"
