@@ -15,4 +15,4 @@ class Author(db.Model):
         self.password = password
 
     def __repr__(self):
-        return '<Author %r>' % self.username
+        return '<Author %r>' % self.username 

@@ -3,9 +3,8 @@ import os
 SECRET_KEY = 'you-will-never-guess'
 DEBUG = True
 DB_USERNAME = 'malmeida'
-DB_PASSWORD = ''
+DB_PASSWORD = '12345'
 BLOG_DATABASE_NAME = 'flask_blog'
-DB_HOST = os.getenv('IP', '0.0.0.0')
-DB_URI = "postgresql+psycopg2://%s:%s@%s/%s" % (DB_USERNAME, DB_PASSWORD, DB_HOST, BLOG_DATABASE_NAME)
+DB_URI = "postgresql+psycopg2://@/{0}".format('flask_blog')
 SQLALCHEMY_DATABASE_URI = DB_URI
 SQLALCHEMY_TRACK_MODIFICATIONS = True

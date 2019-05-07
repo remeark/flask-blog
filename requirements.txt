@@ -1,4 +1,4 @@
 flask
 postgres
 flask-sqlalchemy
-flask_script
+flask-script
