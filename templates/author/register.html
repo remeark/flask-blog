@@ -12,7 +12,8 @@
 
         <form method="POST" action="{{ url_for('register') }}" role="form">
 
-            {{ form.hidden_tag() }}
+            {{ form.hidden_tag() }} 
+
             <div class="form-group">
                 {{ form.fullname.label }}
                 {{ form.fullname|safe }}
@@ -28,3 +29,4 @@
         </form>
     </div>
 </div>
+{% endblock %}
